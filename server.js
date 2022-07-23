@@ -84,7 +84,7 @@ const server = http.createServer((req, res) => {
     } else {
         switch (path.parse(filePath).base) {
             case 'old-page.html':
-                res.writeHead(301, { 'Location': '/new-page.html' });
+                res.writeHead(301, { 'Location': '/lend-page.html' });
                 res.end();
                 break;
             case 'www-page.html':

@@ -1,14 +1,42 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 10;
     box-sizing: border-box;
 }
 
 body {
     font-size: 36px;
     min-height: 100vh;
-    color: #fff;
     background-color: #000;
     display: grid;
     place-content: center;
+}
+
+.monalisa{
+    max-height: 600px;
+    place-content: center;
+    border: 50px, 10px, 10px, 10px;
+    background-color:black;
+}
+
+#nyan{
+    max-height:300px;
+}
+
+.topcorner{
+    position:relative;
+    top: 0;
+    padding-left: 50px;
+   }
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    place-content: center;
+}
+
+#nft-sale{
+    background-color:yellowgreen;
 }

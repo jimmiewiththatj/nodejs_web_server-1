@@ -5,21 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonaLisa Blockchain</title>
+    <title>New Page</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="../views/index.js"></script>
+    <script src="../views/lend-page.js"></script>
 </head>
 
 <body>
-    <div class="row bg-dark">
-        <img class = "monalisa" src = "../img/monalisa.jpg">
-        <div class = "text-center"><h1 class = "center-block">MonaLisaBlockchain</h1></div>
-        <button type="button" class="btn-primary btn-lg">Buy/Sell Art</button>
-        <button type="button" class="btn-primary btn-lg" id="openborrow">Lend/Borrow Loans</button>
+    <div class="container topcorner">
+        <div class="row">
+                <span class = "pull-left pull-up"><h1>Listings</h1></span>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4" id = "nft-sale"> 
+                <h3>Nyan Cat</h3> 
+                <img src = "../img/nyan.jpg" id="nyan">
+                <p>Interest rate: 5%/14 days</p>
+                <p>Full Amount: 5 ETH</p>
+                <p>Contains 10000 NYAN</p>
+            </div>
+        </div>
     </div>
+    
+    
 </body>
 
 </html>
