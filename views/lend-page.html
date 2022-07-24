@@ -14,18 +14,89 @@
 </head>
 
 <body>
-    <div class="container topcorner">
+    <div class="container">
         <div class="row">
-                <span class = "pull-left pull-up"><h1>Listings</h1></span>
+                <span class = "pull-left"><h1>Loan Listings</h1></span>
+        </div>
+        <div class="row">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                      Filter By</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Loan Amount</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Loan Period</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Interest Rate</a></li>
+                          </ul>
+                        
+                          <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <input type="text" id="aname" name="aname"><label for="fname">   to  </label><input type="text" id="bname" name="bname"><label for="fname">   ETH </label>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <input type="text" id="aname" name="aname"><label for="fname">   days  </label>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    <p><span id="demo"></span> %
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        Create Your Loan Listing</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">
+                            <form>
+                                <label for="fname">Loan Amount</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="lname">Interest Rate</label><br>
+                                <input type="text" id="lname" name="lname"><br>
+                                <label for="gname">Interest Period</label><br>
+                                <input type="text" id="gname" name="gname"><br>
+                            </form>
+                            <button class = "btn-primary btn-lg">Create</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
         </div>
         <br>
         <div class="row">
             <div class="col-sm-4" id = "nft-sale"> 
-                <h3>Nyan Cat</h3> 
+                <h3>Nyan Cat Rapid Loan</h3> 
                 <img src = "../img/nyan.jpg" id="nyan">
-                <p>Interest rate: 5%/14 days</p>
-                <p>Full Amount: 5 ETH</p>
-                <p>Contains 10000 NYAN</p>
+                <p>Interest rate: 5%</p>
+                <p>Interest Period: 14 days</p>
+                <p>Amount: 5 ETH</p>
+            </div>
+            <div class="col-sm-4" id = "nft-sale"> 
+                <h3>Shiba Loan</h3> 
+                <img src = "../img/shiba-inu.jpg" id="nyan">
+                <p>Interest rate: 7%</p>
+                <p>Interest Period: 90 days</p>
+                <p>Amount: 50 ETH</p>
+            </div>
+            <div class="col-sm-4" id = "nft-sale"> 
+                <h3>Tron Loan</h3> 
+                <img src = "../img/tron.jpg" id="nyan">
+                <p>Interest rate: 6%</p>
+                <p>Interest Period: 30 days</p>
+                <p>Amount: 10 ETH</p>
             </div>
         </div>
     </div>

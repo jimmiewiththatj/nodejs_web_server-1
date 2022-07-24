@@ -34,9 +34,13 @@ body {
     padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
-    place-content: center;
+    /*place-content: center*/
 }
 
 #nft-sale{
     background-color:yellowgreen;
+}
+
+#confirm{
+    margin-top: 15px;
 }
